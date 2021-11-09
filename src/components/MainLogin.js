@@ -1,59 +1,54 @@
 import styled from 'styled-components'
+import Discover from './Discover'
 
 const LoginPage = (props) => {
 
     return(
-        <Container>
-            <Section>
-                <Hero>
-                    <HomeSide>
-                        <HomePage>
-                        <h1>The professional network for people who don’t wear suits to work</h1>
-                        </HomePage>
-                        <SignForm>
-                            <Google>
-                                <img src="/assets/google.svg" alt="" />
-                                Log in with Google
-                            </Google>
-                            <Line>
-                                <hr /><span>OR</span> <hr />
-                            </Line>
-                            <Socials>
-                                <img src="/assets/facebook.svg" alt="" />
-                                <img src="/assets/twitter.svg" alt="" />
-                                <img src="/assets/apple.svg" alt="" />
-                                <img src="/assets/mail.svg" alt="" />
-                            </Socials>
-                        </SignForm>
-                    </HomeSide>
-                </Hero>
-            </Section>
-        </Container>
+        <Section>
+            <Hero>
+                <HomeSide>
+                    <HomePage>
+                    <h1>The professional network for people who don’t wear suits to work</h1>
+                    </HomePage>
+                    <SignForm>
+                        <Google>
+                            <img src="/assets/google.svg" alt="" />
+                            Log in with Google
+                        </Google>
+                        <Line>
+                            <hr /><span>OR</span> <hr />
+                        </Line>
+                        <Socials>
+                            <img src="/assets/facebook.svg" alt="" />
+                            <img src="/assets/twitter.svg" alt="" />
+                            <img src="/assets/apple.svg" alt="" />
+                            <img src="/assets/mail.svg" alt="" />
+                        </Socials>
+                    </SignForm>
+                </HomeSide>
+            </Hero>
+            <Discover />
+        </Section>
     )
     
 }
-
-const Container = styled.div `
-
-`
 
 const Section = styled.section `
     background-color: #F8F8F8;
     position: relative;
     margin-right: auto;
     margin-left: auto;
-    height: 450px;
 `
 
 const Hero = styled.div `
-    background-size: auto 90%;
+    background-size: auto 82%;
     background-position: right -25px;
     background-image: url("/assets/hero2.jpg");
     background-repeat: no-repeat;
     margin: 0px auto;
     max-width: 1400px;
     top: 50px;
-    height: 400px;
+    height: 450px;
     position: relative;
     
     @media (max-width: 768px){
@@ -105,9 +100,11 @@ const SignForm = styled.div `
     max-width: 245px;
     position: absolute;
     top: 213px;
+    align-items: center;
+    justify-content: center;
 
     @media (max-width: 768px){
-        left: 88px;
+        left: 100px;
         margin-top: 30px;
     }
 `
@@ -158,11 +155,20 @@ const Line = styled.div `
 
 const Socials = styled.div `
     display: flex;
+    transition-duration: 176ms;
 
+    
     img{
         width: 50px;
         padding: 10px 7px 0px 5px;
+        cursor: pointer;
+
+        &:hover{
+            transform: scale(1.1);
+        }
+
     }
 `
+
 
 export default LoginPage

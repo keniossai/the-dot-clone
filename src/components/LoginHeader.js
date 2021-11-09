@@ -10,7 +10,7 @@ const LoginHeader
 				</a>
                 <MenuListWrap>
                     <MenuList>
-                        <a href="/account/login">Hire talent</a>
+                        <a href="">Hire talent</a>
                     </MenuList>
                     <MenuList>
                         <a href="">Explore
@@ -20,7 +20,9 @@ const LoginHeader
                 </MenuListWrap>
 				<div className='menu'>
                     <Join>
-                        Log in
+                        <a href="/account/login">
+                            Log in
+                        </a>
                     </Join>
                     <JoinFree>
                         Join now for free
@@ -125,6 +127,11 @@ const Join = styled.a `
 
     &:hover{
         background-color: rgba(0, 0, 0, 0.03);
+    }
+
+    a{
+        text-decoration: none;
+        color: #383839;
     }
 
 `
