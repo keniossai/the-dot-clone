@@ -95,9 +95,6 @@ const Job = styled.div `
         }
     }
 
-    img{
-        width: 25px;
-    }
 
     h1{
         margin-top: 15px;
@@ -128,9 +125,7 @@ const Skill = styled.div `
         }
     }
 
-    img{
-        width: 25px;
-    }
+   
 
     h1{
         margin-top: 15px;
@@ -160,9 +155,6 @@ const Advice = styled.div `
         }
     }
 
-    img{
-        width: 25px;
-    }
 
     h1{
         margin-top: 15px;
@@ -206,9 +198,7 @@ const Hired = styled.div `
         }
     }
 
-    img{
-        width: 25px;
-    }
+   
 
     h1{
         margin-top: 15px;

@@ -1,5 +1,8 @@
 import styled from 'styled-components'
 import Discover from './Discover'
+import Faq from './Faq'
+import Network from './Network'
+import Sponsors from './Spornsors'
 
 const LoginPage = (props) => {
 
@@ -28,6 +31,9 @@ const LoginPage = (props) => {
                 </HomeSide>
             </Hero>
             <Discover />
+            <Faq />
+            <Sponsors />
+            <Network />
         </Section>
     )
     

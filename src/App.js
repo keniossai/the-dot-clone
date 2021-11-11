@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Switch, Route  } from 'react-router-dom';
 
 import './App.css';
+import Footer from './components/Footer';
 import LoginForm from './components/LoginForm';
 import Login from './components/LoginHeader';
 import MainLogin from './components/MainLogin'
@@ -17,6 +18,7 @@ function App() {
           <Route path='/'>
             <Login />
             <MainLogin />
+            <Footer />
           </Route>
         </Switch>
       </Router>
