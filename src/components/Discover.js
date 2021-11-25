@@ -12,7 +12,10 @@ const Discover = () => {
                                 <img src="/assets/briefcase.svg" alt="" />
                             </Image>
                             <h1>Find your dream job or client</h1>
-                            <p>Discover more</p>
+                            <DiscoverMore>
+                                <p>Discover more</p>
+                                <img src="/assets/right.svg" alt="" />
+                            </DiscoverMore>
                         </a>
                     </Job>
                     <Skill>
@@ -21,7 +24,10 @@ const Discover = () => {
                                 <img src="/assets/calendar.svg" alt="" />
                             </Image>
                             <h1>Upskill at virtual events</h1>
-                            <p>Discover more</p>
+                            <DiscoverMore>
+                                <p>Discover more</p>
+                                <img src="/assets/right.svg" alt="" />
+                            </DiscoverMore>
                         </a>
                     </Skill>
                     <Advice>
@@ -30,7 +36,10 @@ const Discover = () => {
                                 <img src="/assets/loud.svg" alt="" />
                             </Image>
                             <h1>Get advice & find collaborators</h1>
-                            <p>Discover more</p>
+                            <DiscoverMore>
+                                <p>Discover more</p>
+                                <img src="/assets/right.svg" alt="" />
+                            </DiscoverMore>
                         </a>
                     </Advice>
                     <Hired>
@@ -39,7 +48,10 @@ const Discover = () => {
                                 <img src="/assets/building.svg" alt="" />
                             </Image>
                             <h1>Get hired by top companies</h1>
-                            <p>Discover more</p>
+                            <DiscoverMore>
+                                <p>Discover more</p>
+                                <img src="/assets/right.svg" alt="" />
+                            </DiscoverMore>
                         </a>
                     </Hired>
                 </DiscoverySection>
@@ -173,6 +185,22 @@ const Image = styled.div `
 
     @media (max-width: 768px){
         margin: auto;
+    }
+`
+
+const DiscoverMore = styled.div `
+    display: flex;
+
+    @media(max-width: 768px){
+        justify-content: center;
+    }
+
+    img{
+        margin-left: 0.1ch;
+        width: 16px;
+        vertical-align: -0.3ch;
+        transform: translateX(0px);
+        transition: transform 0.35s ease 0s;
     }
 `
 const Hired = styled.div `

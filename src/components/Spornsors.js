@@ -89,7 +89,6 @@ const Google = styled.div`
 	background-image: url('/assets/companies.webp');
 	background-position: 0% 0%;
 	background-size: calc(400%) calc(300%);
-	cursor: pointer;
 
 	@media (max-width: 768px) {
 		grid-area: 1 / 1 / 1 / 7;
@@ -106,7 +105,6 @@ const Spotify = styled.div`
 	background-image: url('/assets/companies.webp');
 	background-position: -100% 0%;
 	background-size: calc(400%) calc(300%);
-	cursor: pointer;
 
 	@media (max-width: 768px) {
 		grid-area: 1 / 7 / 1 / 13;
@@ -122,7 +120,6 @@ const Dazed = styled.div`
 	background-image: url('/assets/companies.webp');
 	background-position: -200% 0%;
 	background-size: calc(400%) calc(300%);
-	cursor: pointer;
 
 	@media (max-width: 768px) {
 		grid-area: 2 / 1 / 2 / 7;
@@ -138,7 +135,6 @@ const Airbnb = styled.div`
 	background-image: url('/assets/companies.webp');
 	background-position: -300% 0%;
 	background-size: calc(400%) calc(300%);
-	cursor: pointer;
 
 	@media (max-width: 768px) {
 		grid-area: 2 / 7 / 2 / 13;
@@ -154,7 +150,6 @@ const Akqa = styled.div`
 	background-image: url('/assets/companies.webp');
 	background-position: 0% -100%;
 	background-size: calc(400%) calc(300%);
-	cursor: pointer;
 
 	@media (max-width: 768px) {
 		background-image: none;
@@ -166,7 +161,6 @@ const BBC = styled.div`
 	background-image: url('/assets/companies.webp');
 	background-position: -100% -100%;
 	background-size: calc(400%) calc(300%);
-	cursor: pointer;
 
 	@media (max-width: 768px) {
 		background-image: none;
@@ -178,7 +172,6 @@ const Burberry = styled.div`
 	background-image: url('/assets/companies.webp');
 	background-position: -200% -100%;
 	background-size: calc(400%) calc(300%);
-	cursor: pointer;
 
 	@media (max-width: 768px) {
 		grid-area: 3 / 1 / 3 / 7;
@@ -194,7 +187,6 @@ const TATE = styled.div`
 	background-image: url('/assets/companies.webp');
 	background-position: -300% -100%;
 	background-size: calc(400%) calc(300%);
-	cursor: pointer;
 
 	@media (max-width: 768px) {
 		grid-area: 3 / 7 / 3 / 13;
@@ -210,7 +202,6 @@ const Universal = styled.div`
 	background-image: url('/assets/companies.webp');
 	background-position: 0% -200%;
 	background-size: calc(400%) calc(300%);
-	cursor: pointer;
 
 	@media (max-width: 768px) {
 		background-image: none;
@@ -222,7 +213,6 @@ const Shelter = styled.div`
 	background-image: url('/assets/companies.webp');
 	background-position: -100% -200%;
 	background-size: calc(400%) calc(300%);
-	cursor: pointer;
 
 	@media (max-width: 768px) {
 		background-image: none;
@@ -234,7 +224,6 @@ const CondeNast = styled.div`
 	background-image: url('/assets/companies.webp');
 	background-position: -200% -200%;
 	background-size: calc(400%) calc(300%);
-	cursor: pointer;
 
 	@media (max-width: 768px) {
 		background-image: none;
@@ -246,7 +235,6 @@ const Twitter = styled.div`
 	background-image: url('/assets/companies.webp');
 	background-position: -300% -200%;
 	background-size: calc(400%) calc(300%);
-	cursor: pointer;
 
 	@media (max-width: 768px) {
 		background-image: none;
