@@ -4,6 +4,7 @@ import './App.css';
 import Footer from './components/Footer';
 import LoginForm from './components/LoginForm';
 import Login from './components/LoginHeader';
+import MainFeeds from './components/MainFeeds';
 import MainLogin from './components/MainLogin'
 
 function App() {
@@ -15,10 +16,13 @@ function App() {
             <Login />
             <LoginForm />
           </Route>
-          <Route path='/'>
+          <Route exact path='/'>
             <Login />
             <MainLogin />
             <Footer />
+          </Route>
+          <Route path='/feeds'>
+            <MainFeeds />
           </Route>
         </Switch>
       </Router>

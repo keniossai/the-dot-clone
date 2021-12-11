@@ -7,7 +7,7 @@ body{
 :root,
 body,
 html{
-  background-color: #F8F8F8;
+  /* background-color: #F8F8F8; */
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -24,5 +24,10 @@ div, h1, h2, h3, h4, h5, h6, header, html, i, img, label, small, li, nav, p, spa
 }
 
 body{
+  position: relative;
   font-family: theinhardt,sans-serif;
+  font-size: 100%;
+  font-weight: 300;
+  color: #383839;
+  background-color: #f4f4f4;
 }
