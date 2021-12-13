@@ -25,23 +25,58 @@ const NewsFeeds = (props) => {
                     </ComposeFeedTouchable>
                     <ComposeIconsPane>
                         <Question>
-                            <span>
-                                <span>
+                            <QuestionName>
+                                <QuestionImage>
                                     <img src="/assets/loud.svg" alt="" />
-                                </span>
+                                </QuestionImage>
                                 <span>Question</span>
-                            </span>
+                            </QuestionName>
                         </Question>
-                        <Post>
-                            <span></span>
-                        </Post>
-                        <Project></Project>
-                        <Jobs></Jobs>
+                        <a href="">
+                            <PostName>
+                                <PostImage>
+                                    <img src="/assets/briefcase.svg" alt="" />
+                                </PostImage>
+                                <span>Post</span>
+                            </PostName>
+                        </a>
+                        <a href="">
+                            <ProjectName>
+                                <ProjectImage>
+                                    <img src="/assets/briefcase.svg" alt="" />
+                                </ProjectImage>
+                                <span>Projects</span>
+                            </ProjectName>
+                        </a>
+                        <a href="">
+                            <JobsName>
+                                <JobsImage>
+                                    <img src="/assets/briefcase.svg" alt="" />
+                                </JobsImage>
+                                <span>Job</span>
+                            </JobsName>
+                        </a>
                     </ComposeIconsPane>
                 </ComposeFeed>
             </ViewStack>
+            <div>
+                <div>
+                    <div>
+                        <ItemCard>
+                            <Content>
+                                <ContentView>
+                                    <UserprofileName>
+                                        <ProfileName>
+                                            hello
+                                        </ProfileName>
+                                    </UserprofileName>
+                                </ContentView>
+                            </Content>
+                        </ItemCard>
+                    </div>
+                </div>
+            </div>
         </MainNewsFeeds>
-
     )
 }
 
@@ -134,22 +169,142 @@ const TypoRoot = styled.p `
 `
 
 const ComposeIconsPane = styled.div `
+    display: flex;
+    justify-content: space-around;
+    padding: 16px 20px 15px;
+    align-items: center;
+    -moz-box-align: center;
 
+    img{
+        width: 30px;
+    }
+
+    a{
+        padding-right: 12px;
+        text-shadow: none;
+        text-decoration: none;
+        font-weight: 400;
+        outline: none;
+        white-space: none;
+        color: #383839;
+    }
 `
 
 const Question = styled.button `
+    padding-right: 12px;
+    height: 32px;
+    font-size: 16px;
+    background: transparent;
+    border: 0;
+    padding: 0;
+    text-shadow: none;
+    text-decoration: none;
+    font-weight: 400;
+    outline: none;
+    white-space: none;
 
 `
 
-const Post = styled.a `
+const QuestionName = styled.span `
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    height: 100%;
+    pointer-events: none;
+    font-size: 16px;
+
+    span{
+        padding-right: 0;
+        /* margin-left: 4px; */
+    }
+`
+const QuestionImage = styled.span `
+    position: relative;
 
 `
 
-const Project = styled.a`
-
+const PostName = styled.span `
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    height: 100%;
+    pointer-events: none;
+    font-size: 16px;
 `
-const Jobs = styled.a`
 
+const PostImage = styled.span `
+    position: relative;
 `
 
+
+const ProjectName = styled.span`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    height: 100%;
+    pointer-events: none;
+    font-size: 16px;
+`
+
+const ProjectImage = styled.span `
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    height: 100%;
+    pointer-events: none;
+    font-size: 16px;
+`
+
+const JobsName = styled.span `
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    height: 100%;
+    pointer-events: none;
+    font-size: 16px;
+`
+const JobsImage = styled.span `
+    position: relative;
+`
+
+const ItemCard = styled.div `
+    box-shadow: 0 10px 10px 0 var(--color-black-alpha-5),0 1px 3px 0 var(--color-black-alpha-5);
+    border-radius: 6px;
+    background-color: var(--color-white);
+    border-color: var(--color-almost-grey);
+`
+const Content = styled.div `
+    padding-top: 20px;
+`
+
+const ContentView = styled.div `
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: minmax(0px 1fr);
+    row-gap: 15px;
+`
+const UserprofileName = styled.div `
+    display: flex;
+    flex-direction: row;
+`
+
+const ProfileName = styled.header `
+    display: grid;
+    grid-auto-flow: column;
+    -moz-box-pack: start;
+    justify-content: flex-start;
+    -moz-box-align: center;
+    align-items: center;
+    column-gap: 10px;
+`
 export default NewsFeeds
